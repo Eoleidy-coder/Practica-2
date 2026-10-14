@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+
+    <nav>
+    <a href="index.html">Presentacion</a>
+    <a href="formulario.html">Formulario</a>
+ </nav>
+
+ <section>
+    <form action="https://httpbin.org/post" method="post">
+
+ <h1>Formulario De Registro</h1>
+    <hr>
+    <h2>Datos Personales</h2>
+
+    <p>
+    <label for="Nombre"><strong>Nombre</strong></label>
+    <input type="text" name="Nombre" placeholder=" Escribe su nombre" id="Nombre">
+    </p>
+
+    <p>
+    <label for="No.Cedula"><strong>No. Cedula</strong></label>
+    <input type="text" name="No.Cedula" placeholder=" Numero de identidad" id="No.Cedula">
+    </p>
+
+    <p>
+        <label for="Apellido"><strong>Apellido</strong></label>
+        <input type="text"name="Apellido" placeholder="Escribe tu apellido" id="Apellido">
+    </p>
+
+    <p>
+    <label for="Fecha de nacimiento"><strong>Fecha de nacimiento</strong></label>
+    <input type="date"name="Fecha de nacimiento"
+     placeholder="fecha de Nacimiento" id="Fecha de nacimiento">
+    <p>
+        <label for="Nacionalidad">Nacionalidad</label>
+        <select name="Nacionalidad" id="Nacionalidad">
+        <option value="Dom">Dominicana</option>
+        <option value="EEUU">Estadounidense</option>
+        <option value="PR">Portorriqueña</option>
+        <option value="Hai">Haitiana</option>
+        </select>
+
+    <h2>Contacto</h2>
+
+    <p>
+    <label for="Numero de Telefono"><strong>No.Telefono</strong></label>
+    <input type="text"name="Numero de telefono" placeholder="Numero de Telefono" id="Numero de Telefono">
+    <p>
+    
+     <p>
+    <label for="Correo"><strong>Correo</strong></label>
+    <input type="email"name="Correo" placeholder="Correo" id="Correo">
+    <p>
+        <label for="password"><strong>Contraseña</strong></label>
+          <input type="password"name="Contraseña" placeholder="Indica tu Contraseña"
+            minlength="6" id="Contraseña">
+<p></p>
+       <button type="submit"><h2>Enviar</h2></button>
+        <button type="reset"><h2>Borrar Formulario</h2></button>
+      </form>
+    </section> 
+
+</body>
+</html>
