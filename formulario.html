@@ -25,13 +25,13 @@
     </p>
 
     <p>
-    <label for="No.Cedula"><strong>No. Cedula</strong></label>
-    <input type="text" name="No.Cedula" placeholder=" Numero de identidad" id="No.Cedula">
+        <label for="Apellido"><strong>Apellido</strong></label>
+        <input type="text"name="Apellido" placeholder="Escribe tu apellido" id="Apellido">
     </p>
 
     <p>
-        <label for="Apellido"><strong>Apellido</strong></label>
-        <input type="text"name="Apellido" placeholder="Escribe tu apellido" id="Apellido">
+    <label for="No.Cedula"><strong>No. Cedula</strong></label>
+    <input type="text" name="No.Cedula" placeholder=" Numero de identidad" id="No.Cedula">
     </p>
 
     <p>
@@ -39,7 +39,7 @@
     <input type="date"name="Fecha de nacimiento"
      placeholder="fecha de Nacimiento" id="Fecha de nacimiento">
     <p>
-        <label for="Nacionalidad">Nacionalidad</label>
+        <label for="Nacionalidad"><strong>Nacionalidad</strong>
         <select name="Nacionalidad" id="Nacionalidad">
         <option value="Dom">Dominicana</option>
         <option value="EEUU">Estadounidense</option>
@@ -47,11 +47,18 @@
         <option value="Hai">Haitiana</option>
         </select>
 
+        <p>
+          <label for="gender">Género</label>
+          <input type="radio" name="gender" value="hombre" checked />Hombre
+          <input type="radio" name="gender" value="mujer" />Mujer
+        </p>
+
     <h2>Contacto</h2>
 
     <p>
     <label for="Numero de Telefono"><strong>No.Telefono</strong></label>
-    <input type="text"name="Numero de telefono" placeholder="Numero de Telefono" id="Numero de Telefono">
+    <input type="text"name="Numero de telefono" placeholder="Numero de Telefono" 
+      required id="Numero de Telefono">
     <p>
     
      <p>
@@ -60,7 +67,23 @@
     <p>
         <label for="password"><strong>Contraseña</strong></label>
           <input type="password"name="Contraseña" placeholder="Indica tu Contraseña"
-            minlength="6" id="Contraseña">
+            minlength="6" required ="Contraseña"> 
+            <p>
+    <label for="comentarios">Escribe tus comentarios:</label>
+    <br>
+    <textarea name="comentarios" id="comentarios"
+              rows="5" cols="35"
+              placeholder="Escribe aquí tus comentarios"></textarea>
+      </p>
+
+      <p>
+    <input type="checkbox" name="acepta_condiciones"
+           required="acepta_condiciones" value="si">
+    <label for="acepta_condiciones"> 
+        Acepto las condiciones del formulario.
+    </label>
+</p>
+
 <p></p>
        <button type="submit"><h2>Enviar</h2></button>
         <button type="reset"><h2>Borrar Formulario</h2></button>
